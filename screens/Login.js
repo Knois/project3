@@ -17,8 +17,8 @@ export default function Login({ navigation }) {
 
   return (
     <KeyboardAwareScrollView style={style.body}>
-      <View style={{ paddingTop: "20%", paddingBottom: "15%" }}>
-        <Text style={style.loginHeader}>Welcome</Text>
+      <View style={style.loginHeaderBox}>
+        <Text style={style.loginHeaderTitle}>Welcome</Text>
         <Text style={style.loginHeaderText}>
           We offer the best and useful news app
         </Text>

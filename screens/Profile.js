@@ -5,7 +5,7 @@ import { style } from "../styles/style";
 export default function Profile({ navigation }) {
   return (
     <View style={style.body}>
-      <Button title="Next" onPress={() => navigation.popToTop()} />
+      <Button title="Log Out" onPress={() => navigation.popToTop()} />
     </View>
   );
 }

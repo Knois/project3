@@ -17,7 +17,11 @@ export default function App() {
           component={Login}
           options={{ headerShown: false }}
         />
-        <Stack.Screen name="News" component={News} />
+        <Stack.Screen
+          name="News"
+          component={News}
+          options={{ headerShown: false }}
+        />
         <Stack.Screen name="Profile" component={Profile} />
         <Stack.Screen name="Post" component={Post} />
       </Stack.Navigator>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Text, View, TextInput, Modal, TouchableOpacity } from "react-native";
+import { Text, View, TextInput, TouchableOpacity } from "react-native";
 import { style } from "../styles/style";
 import { StatusBar } from "expo-status-bar";
 import { Ionicons } from "@expo/vector-icons";
@@ -50,8 +50,8 @@ export default function Login({ navigation }) {
         />
       </View>
       <Text style={style.messagePrivacyPolicy}>
-        By signing up, you agree to the{" "}
-        <Text style={style.messagePrivacyPolicyLink}>Privacy Policy</Text> and
+        By signing up, you agree to the
+        <Text style={style.messagePrivacyPolicyLink}> Privacy Policy</Text> and
         <Text style={style.messagePrivacyPolicyLink}> Terms & Conditions</Text>
       </Text>
       <TouchableOpacity

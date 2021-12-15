@@ -99,6 +99,8 @@ export const style = StyleSheet.create({
     width: "100%",
     alignSelf: "center",
   },
+  newsCategoryItem: {},
+  newsCategoryItemTitle: { color: ORANGE, fontSize: 10 },
   //FullInfo экран / новость целиком
   fullInfoImg: {
     width: 350,

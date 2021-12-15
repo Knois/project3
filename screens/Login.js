@@ -25,7 +25,7 @@ export default function Login({ navigation }) {
       </View>
       <Text style={style.warningMessage}>{warningMessage}</Text>
       <View style={style.loginInputBox}>
-        <Ionicons name="person" size={24} color="#9b9bb7" />
+        <Ionicons name="person" size={24} color="#000000" />
         <TextInput
           onChangeText={onChangeText}
           value={text}
@@ -37,7 +37,7 @@ export default function Login({ navigation }) {
         />
       </View>
       <View style={style.loginInputBox}>
-        <Ionicons name="key-outline" size={24} color="#9b9bb7" />
+        <Ionicons name="key-outline" size={24} color="#000000" />
         <TextInput
           onChangeText={onChangeNumber}
           value={number}
@@ -70,7 +70,7 @@ export default function Login({ navigation }) {
           <Text style={style.messagePrivacyPolicyLink}>Register here</Text>
         </Text>
       </View>
-      <StatusBar style="light" />
+      <StatusBar style="dark" />
     </KeyboardAwareScrollView>
   );
 }

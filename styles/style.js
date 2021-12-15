@@ -1,9 +1,12 @@
-import { StyleSheet } from "react-native";
-const PRIMARY = "#07074e";
-const SECONDARY = "#17185a";
-const fontPRIMARY = "#fff";
+import { StyleSheet, Dimensions } from "react-native";
+
+const windowWidth = Dimensions.get("screen").width;
+const windowHeight = Dimensions.get("screen").height;
+const GREY = "#f1f1f1";
+const WHITE = "#fff";
+const BLACK = "#000000";
+const ORANGE = "#ff6b00";
 const fontSECONDARY = "#9b9bb7";
-const BORDER = "#4b478b";
 
 export const style = StyleSheet.create({
   body: {
@@ -11,43 +14,52 @@ export const style = StyleSheet.create({
     height: "100%",
     padding: 20,
     paddingTop: 40,
-    backgroundColor: PRIMARY,
+    backgroundColor: GREY,
   },
   loginHeaderBox: { paddingTop: "20%", paddingBottom: "15%" },
-  loginHeaderTitle: { color: fontPRIMARY, fontSize: 35 },
-  loginHeaderText: { color: fontSECONDARY, fontSize: 30 },
+  loginHeaderTitle: { color: ORANGE, fontSize: 40 },
+  loginHeaderText: { color: BLACK, fontSize: 30 },
   loginInputBox: {
     marginTop: 20,
     flexDirection: "row",
     alignItems: "center",
     padding: 20,
-    borderColor: BORDER,
+    borderColor: ORANGE,
     borderWidth: 1,
     borderRadius: 15,
-    backgroundColor: SECONDARY,
+    backgroundColor: WHITE,
   },
   loginBoxLast: {
-    marginTop: "25%",
+    marginTop: "20%",
     justifyContent: "flex-end",
     alignSelf: "center",
   },
   loginInput: {
     width: "100%",
     alignSelf: "flex-start",
-    color: fontPRIMARY,
+    color: BLACK,
   },
-  messagePrivacyPolicy: { marginTop: 15, color: fontSECONDARY, fontSize: 12 },
-  messagePrivacyPolicyLink: { color: fontPRIMARY },
+  messagePrivacyPolicy: { marginTop: 15, color: BLACK, fontSize: 12 },
+  messagePrivacyPolicyLink: { color: ORANGE },
   goButton: {
-    backgroundColor: SECONDARY,
+    backgroundColor: BLACK,
     marginTop: "20%",
     padding: 20,
-    borderColor: BORDER,
-    borderWidth: 1,
+    borderColor: ORANGE,
+    borderWidth: 2,
     borderRadius: 40,
     alignSelf: "center",
   },
-  goButtonText: { color: "fontPRIMARY", fontSize: 20 },
-  toRegisterText: { color: fontPRIMARY },
+  goButtonText: { color: WHITE, fontSize: 20 },
+  toRegisterText: { color: BLACK },
   warningMessage: { color: "red", alignSelf: "center" },
+  newsItem: {
+    marginVertical: 10,
+    padding: 20,
+    alignItems: "center",
+    backgroundColor: WHITE,
+  },
+  newsTitle: { color: BLACK },
+  newsImage: { width: 200, height: 100 },
+  newsArticle: { color: ORANGE },
 });

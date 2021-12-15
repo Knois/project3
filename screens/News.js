@@ -86,21 +86,33 @@ export default function News({ navigation }) {
           size={35}
           color="#ff6b00"
           onPress={() => changeCategory(1)}
-          style={style.newsCategoryBarIcon}
+          style={{
+            backgroundColor: category === 1 ? "black" : "white",
+            borderRadius: 20,
+            padding: 15,
+          }}
         />
         <MaterialIcons
           name="location-city"
           size={35}
           color="#ff6b00"
           onPress={() => changeCategory(2)}
-          style={style.newsCategoryBarIcon}
+          style={{
+            backgroundColor: category === 2 ? "black" : "white",
+            borderRadius: 20,
+            padding: 15,
+          }}
         />
         <MaterialIcons
           name="sports-football"
           size={35}
-          color="#ff6b00"
+          color={"#ff6b00"}
           onPress={() => changeCategory(3)}
-          style={style.newsCategoryBarIcon}
+          style={{
+            backgroundColor: category === 3 ? "black" : "white",
+            borderRadius: 20,
+            padding: 15,
+          }}
         />
       </View>
       <StatusBar style="dark" />

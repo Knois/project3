@@ -99,11 +99,6 @@ export const style = StyleSheet.create({
     width: "100%",
     alignSelf: "center",
   },
-  newsCategoryBarIcon: {
-    backgroundColor: WHITE,
-    borderRadius: 20,
-    padding: 15,
-  },
   //FullInfo экран / новость целиком
   fullInfoImg: {
     width: 350,

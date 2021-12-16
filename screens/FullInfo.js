@@ -2,7 +2,6 @@ import React from "react";
 import { Text, View, Image, ScrollView } from "react-native";
 import { style } from "../styles/style";
 import { StatusBar } from "expo-status-bar";
-import { FlatList } from "react-native-web";
 
 export default function FullInfo({ route }) {
   return (

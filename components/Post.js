@@ -2,6 +2,7 @@ import React from "react";
 import { TouchableOpacity, Text, ImageBackground, View } from "react-native";
 import { style } from "../styles/style";
 import { useNavigation } from "@react-navigation/native";
+import { ORANGE } from "../constants/constants";
 
 export const Post = ({ item }) => {
   const navigation = useNavigation();
@@ -15,7 +16,7 @@ export const Post = ({ item }) => {
         style={style.newsItemImg}
         imageStyle={{
           borderRadius: 20,
-          borderColor: "#ff6b00",
+          borderColor: ORANGE,
           borderWidth: 2,
         }}
       >

@@ -1,20 +1,18 @@
-import { StyleSheet, Dimensions } from "react-native";
-
-const windowWidth = Dimensions.get("screen").width;
-const windowHeight = Dimensions.get("screen").height;
-const GREY = "#f1f1f1";
-const WHITE = "#fff";
-const BLACK = "#000000";
-const BLACKopacity = "rgba(0, 0, 0, 0.7)";
-const ORANGE = "#ff6b00";
-const fontSECONDARY = "#9b9bb7";
+import { StyleSheet } from "react-native";
+import {
+  GREY,
+  WHITE,
+  BLACK,
+  ORANGE,
+  BLACKopacity,
+} from "../constants/constants";
 
 export const style = StyleSheet.create({
   body: {
     flex: 1,
     height: "100%",
     padding: 20,
-    paddingTop: 40,
+    paddingTop: 20,
     backgroundColor: GREY,
   },
 
@@ -68,7 +66,7 @@ export const style = StyleSheet.create({
   newsItemBox: {
     alignSelf: "center",
     alignItems: "center",
-    marginVertical: 10,
+    marginBottom: 10,
     position: "relative",
   },
   newsItemImg: { width: 350, height: 234 },

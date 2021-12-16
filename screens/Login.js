@@ -3,6 +3,7 @@ import { Text, View, TextInput, TouchableOpacity } from "react-native";
 import { style } from "../styles/style";
 import { StatusBar } from "expo-status-bar";
 import { Ionicons } from "@expo/vector-icons";
+import { BLACK, fontSECONDARY } from "../constants/constants";
 
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 
@@ -25,24 +26,24 @@ export default function Login({ navigation }) {
       </View>
       <Text style={style.warningMessage}>{warningMessage}</Text>
       <View style={style.loginInputBox}>
-        <Ionicons name="person" size={24} color="#000000" />
+        <Ionicons name="person" size={24} color={BLACK} />
         <TextInput
           onChangeText={onChangeText}
           value={text}
           placeholder="Enter your login"
-          placeholderTextColor="#9b9bb7"
+          placeholderTextColor={fontSECONDARY}
           textAlign="center"
           maxLength={20}
           style={style.loginInput}
         />
       </View>
       <View style={style.loginInputBox}>
-        <Ionicons name="key-outline" size={24} color="#000000" />
+        <Ionicons name="key-outline" size={24} color={BLACK} />
         <TextInput
           onChangeText={onChangeNumber}
           value={number}
           placeholder="Enter your password"
-          placeholderTextColor="#9b9bb7"
+          placeholderTextColor={fontSECONDARY}
           textAlign="center"
           maxLength={20}
           style={style.loginInput}

@@ -1,6 +1,5 @@
 import React from "react";
 import { TouchableOpacity } from "react-native";
-import { style } from "../styles/style";
 import { useNavigation } from "@react-navigation/native";
 import { MaterialIcons } from "@expo/vector-icons";
 

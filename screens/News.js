@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, FlatList, Text } from "react-native";
+import { View, FlatList } from "react-native";
 import { style } from "../styles/style";
 import { StatusBar } from "expo-status-bar";
 import { Post } from "../components/Post";

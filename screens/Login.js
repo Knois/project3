@@ -4,8 +4,8 @@ import { style } from "../styles/style";
 import { StatusBar } from "expo-status-bar";
 import { Ionicons } from "@expo/vector-icons";
 import { BLACK, fontSECONDARY } from "../constants/constants";
-
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
+import * as SecureStore from "expo-secure-store";
 
 export default function Login({ navigation }) {
   const [text, onChangeText] = useState(null);
